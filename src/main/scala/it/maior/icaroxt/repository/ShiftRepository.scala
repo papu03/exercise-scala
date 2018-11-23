@@ -1,15 +1,16 @@
 package it.maior.icaroxt.repository
 
 import it.maior.icaroxt.entity.Shift
+import it.maior.icaroxt.model.ShiftIdGenerator
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.stereotype.Repository
 
 import scala.collection.mutable.ArrayBuffer
 
 @Repository
-class ShiftRepository(@Autowired val crewMemberManager: CrewMemberRepository, @Autowired val weekDayManager: WeekDayRepository) {
+class ShiftRepository(@Autowired val crewMemberManager: CrewMemberRepository, @Autowired val weekDayManager: WeekDayRepository, @Autowired val shiftIdGenerator:ShiftIdGenerator) {
 
-  val shifts:ArrayBuffer[Shift] = ArrayBuffer(
+  var shifts:ArrayBuffer[Shift] = ArrayBuffer(
     createShiftFromMemberName("Riccardo","Monday",3),
     createShiftFromMemberName("Tommaso","Wednesday",1),
     createShiftFromMemberName("Giuseppe","Monday",4),
@@ -20,7 +21,12 @@ class ShiftRepository(@Autowired val crewMemberManager: CrewMemberRepository, @A
 
   def createShiftFromMemberName(name:String,weekDayName:String,duration:Int)={
 
-    val weekDay = weekDayManager.week.filter(weekDay=>weekDay.name==weekDayName)(0)
-    new Shift(crewMemberManager.crewMembers.filter(member=>member.name==name)(0),weekDay,duration)
+
+    val weekDay = weekDayManager.week.collectFirst{case weekDay if weekDay.name==weekDayName => weekDay}
+    val member = crewMemberManager.crewMembers.collectFirst{case member if member.name==name => member}
+
+    val shiftId = shiftIdGenerator.generateIds()
+
+    new Shift(shiftId,member.get,weekDay.get,duration)
   }
 }

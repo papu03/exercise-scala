@@ -1,7 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="50f590f7-641c-4525-85a4-311328298d07" name="Default Changelist" comment="" />
+    <list default="true" id="50f590f7-641c-4525-85a4-311328298d07" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/scala_compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/scala_compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/it/maior/icaroxt/ShiftDeserializer.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/it/maior/icaroxt/ShiftDeserializer.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/it/maior/icaroxt/entity/Shift.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/it/maior/icaroxt/entity/Shift.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/it/maior/icaroxt/model/ShiftManager.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/it/maior/icaroxt/model/ShiftManager.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/it/maior/icaroxt/repository/ShiftRepository.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/it/maior/icaroxt/repository/ShiftRepository.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/it/maior/icaroxt/webservice/ShiftDTO.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/it/maior/icaroxt/webservice/ShiftDTO.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/it/maior/icaroxt/webservice/ShiftWebService.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/it/maior/icaroxt/webservice/ShiftWebService.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/it/maior/icaroxt/ShiftDeserializer$$anonfun$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/it/maior/icaroxt/ShiftDeserializer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/it/maior/icaroxt/entity/Shift$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/it/maior/icaroxt/entity/Shift$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/it/maior/icaroxt/entity/Shift.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/it/maior/icaroxt/entity/Shift.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/it/maior/icaroxt/model/ShiftManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/it/maior/icaroxt/model/ShiftManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/it/maior/icaroxt/repository/ShiftRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/it/maior/icaroxt/repository/ShiftRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/it/maior/icaroxt/webservice/ShiftDTO$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/it/maior/icaroxt/webservice/ShiftDTO$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/it/maior/icaroxt/webservice/ShiftDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/it/maior/icaroxt/webservice/ShiftDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/it/maior/icaroxt/webservice/ShiftWebService$$anonfun$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/it/maior/icaroxt/webservice/ShiftWebService$$anonfun$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/it/maior/icaroxt/webservice/ShiftWebService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/it/maior/icaroxt/webservice/ShiftWebService.class" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -14,45 +36,46 @@
     <session id="-464071305">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="12" />
+          <entry key="project.closed" value="15" />
           <entry key="project.open.time.2" value="3" />
           <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.35" value="1" />
           <entry key="project.open.time.36" value="1" />
-          <entry key="project.open.time.37" value="2" />
-          <entry key="project.open.time.38" value="1" />
+          <entry key="project.open.time.37" value="3" />
+          <entry key="project.open.time.38" value="2" />
+          <entry key="project.open.time.39" value="1" />
           <entry key="project.open.time.4" value="2" />
           <entry key="project.open.time.51" value="1" />
           <entry key="project.open.time.74" value="1" />
-          <entry key="project.opened" value="13" />
+          <entry key="project.opened" value="16" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="scala" value="3344" />
-          <entry key="xml" value="7" />
+          <entry key="scala" value="4563" />
+          <entry key="xml" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Scala" value="3344" />
-          <entry key="XML" value="7" />
+          <entry key="Scala" value="4563" />
+          <entry key="XML" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="class" value="29" />
+          <entry key="class" value="31" />
           <entry key="java" value="2" />
-          <entry key="scala" value="69" />
-          <entry key="xml" value="1" />
+          <entry key="scala" value="86" />
+          <entry key="xml" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="29" />
+          <entry key="CLASS" value="31" />
           <entry key="JAVA" value="2" />
-          <entry key="Scala" value="69" />
-          <entry key="XML" value="1" />
+          <entry key="Scala" value="86" />
+          <entry key="XML" value="2" />
         </counts>
       </usages-collector>
     </session>
@@ -60,34 +83,55 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/it/maior/icaroxt/webservice/CrewMemberWebService.scala">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/it/maior/icaroxt/webservice/ShiftDTO.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="9" column="52" selection-start-line="9" selection-start-column="52" selection-end-line="9" selection-end-column="52" />
-              <folding>
-                <element signature="e#37#87#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="34">
+              <caret line="2" column="41" selection-start-line="2" selection-start-column="41" selection-end-line="2" selection-end-column="41" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/it/maior/icaroxt/model/ShiftManager.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/it/maior/icaroxt/webservice/ShiftWebService.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+            <state relative-caret-position="442">
+              <caret line="56" selection-start-line="56" selection-end-line="56" />
               <folding>
-                <element signature="e#37#87#0" expanded="true" />
+                <element signature="e#37#99#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/it/maior/icaroxt/webservice/ShiftDTO.scala">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/it/maior/icaroxt/repository/ShiftRepository.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="11" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
+            <state relative-caret-position="126">
+              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+              <folding>
+                <element signature="e#37#73#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/it/maior/icaroxt/entity/shiftValidations/ShiftValidator.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="634">
+              <caret line="55" selection-start-line="55" selection-end-line="55" />
+              <folding>
+                <element signature="e#50#78#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -98,9 +142,18 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Package Object" />
         <option value="Scala Object" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>cats</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -114,7 +167,6 @@
         <option value="$PROJECT_DIR$/src/main/scala/Application.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/Application.java" />
         <option value="$PROJECT_DIR$/src/main/scala/it/maior/icaroxt/UserController.scala" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/scala/it/maior/icaroxt/entity/User.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/it/maior/icaroxt/entity/Superuser.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/it/maior/icaroxt/Application.scala" />
@@ -126,7 +178,6 @@
         <option value="$PROJECT_DIR$/src/main/scala/it/maior/icaroxt/entity/WeekDay.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/it/maior/icaroxt/controller/ShiftController.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/it/maior/icaroxt/WeekDayManager.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/it/maior/icaroxt/entity/Shift.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/it/maior/icaroxt/controller/CrewMemberController.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/it/maior/icaroxt/CrewMemberManager.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/it/maior/icaroxt/ShiftManager.scala" />
@@ -135,14 +186,21 @@
         <option value="$PROJECT_DIR$/src/main/scala/it/maior/icaroxt/manager/WeekDayManager.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/it/maior/icaroxt/manager/ShiftManager.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/it/maior/icaroxt/manager/CrewMemberManager.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/it/maior/icaroxt/ShiftDeserializer.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/it/maior/icaroxt/model/ShiftService.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/it/maior/icaroxt/model/ShiftManager.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/it/maior/icaroxt/webservice/ShiftDTO.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/it/maior/icaroxt/model/CrewMemberManager.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/it/maior/icaroxt/repository/CrewMemberRepository.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/it/maior/icaroxt/webservice/CrewMemberWebService.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/it/maior/icaroxt/webservice/ShiftDTO.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/it/maior/icaroxt/entity/Shift.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/it/maior/icaroxt/ShiftDeserializer.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/it/maior/icaroxt/entity/package.scala" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/scala/it/maior/icaroxt/entity/shiftValidations/shiftValidationErrors.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/it/maior/icaroxt/model/ShiftIdGenerator.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/it/maior/icaroxt/entity/shiftValidations/ShiftValidator.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/it/maior/icaroxt/repository/ShiftRepository.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/it/maior/icaroxt/webservice/ShiftWebService.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/it/maior/icaroxt/model/ShiftManager.scala" />
       </list>
     </option>
   </component>
@@ -153,17 +211,21 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="235" />
-    <option name="y" value="199" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="223" />
+    <option name="y" value="146" />
     <option name="width" value="1326" />
     <option name="height" value="745" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -243,16 +305,16 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542712953399" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542965490218" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="Scala Compiler" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -329,7 +391,7 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18336888" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18333334" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -338,15 +400,15 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.21668473" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3997833" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.36507937" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39894179" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.32719395" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32698414" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -378,13 +440,6 @@
     <entry file="file://$PROJECT_DIR$/src/main/scala/Application.java" />
     <entry file="file://$PROJECT_DIR$/src/main/scala/Application.scala" />
     <entry file="file://$PROJECT_DIR$/src/main/scala/UserController.scala" />
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="838">
-          <caret line="168" selection-start-line="168" selection-end-line="168" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.0.6.RELEASE/spring-web-5.0.6.RELEASE.jar!/org/springframework/web/server/handler/DefaultWebFilterChain.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -457,13 +512,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/it/maior/icaroxt/CrewMemberManager.scala" />
-    <entry file="file://$PROJECT_DIR$/src/main/scala/it/maior/icaroxt/entity/WeekDay.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="18" column="21" selection-start-line="18" selection-start-column="12" selection-end-line="18" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/it/maior/icaroxt/WeekDayManager.scala" />
     <entry file="file://$PROJECT_DIR$/src/main/scala/it/maior/icaroxt/ShiftManager.scala" />
     <entry file="file://$PROJECT_DIR$/src/main/scala/it/maior/icaroxt/CorsFilter.scala">
@@ -494,20 +542,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/it/maior/icaroxt/entity/Shift.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="21" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/it/maior/icaroxt/entity/CrewMember.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/it/maior/icaroxt/Application.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -518,31 +552,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/it/maior/icaroxt/ShiftDeserializer.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-14">
-          <caret line="17" column="128" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="128" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/it/maior/icaroxt/repository/ShiftRepository.scala">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/it/maior/icaroxt/webservice/CrewMemberWebService.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
-          <caret line="8" column="11" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/it/maior/icaroxt/repository/WeekDayRepository.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="5" selection-start-line="5" selection-end-line="5" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/it/maior/icaroxt/model/ShiftManager.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="13" column="41" selection-start-line="13" selection-start-column="41" selection-end-line="13" selection-end-column="41" />
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
         </state>
       </provider>
     </entry>
@@ -553,37 +566,131 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/it/maior/icaroxt/model/CrewMemberManager.scala">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/it/maior/icaroxt/ShiftDeserializer.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+        <state>
+          <caret selection-start-column="2" selection-end-line="37" selection-end-column="3" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/it/maior/icaroxt/webservice/CrewMemberWebService.scala">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/it/maior/icaroxt/entity/WeekDay.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="19" lean-forward="true" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/it/maior/icaroxt/entity/package.scala" />
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="296">
+          <caret line="116" column="24" selection-start-line="116" selection-start-column="24" selection-end-line="116" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/typesafe/akka/akka-actor_2.12/2.5.14/akka-actor_2.12-2.5.14.jar!/akka/japi/Option.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="19" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/it/maior/icaroxt/model/CrewMemberManager.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/it/maior/icaroxt/repository/WeekDayRepository.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="5" selection-start-line="5" selection-end-line="5" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/typelevel/cats-core_2.12/1.4.0/cats-core_2.12-1.4.0.jar!/cats/syntax/Tuple3SemigroupalOps.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/it/maior/icaroxt/entity/shiftValidations/shiftValidationErrors.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="41" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/it/maior/icaroxt/entity/CrewMember.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/it/maior/icaroxt/entity/Shift.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
-          <caret line="9" column="52" selection-start-line="9" selection-start-column="52" selection-end-line="9" selection-end-column="52" />
-          <folding>
-            <element signature="e#37#87#0" expanded="true" />
-          </folding>
+          <caret line="6" column="64" selection-start-line="6" selection-start-column="64" selection-end-line="6" selection-end-column="64" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/it/maior/icaroxt/webservice/ShiftDTO.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
-          <caret line="2" column="11" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
+          <caret line="2" column="41" selection-start-line="2" selection-start-column="41" selection-end-line="2" selection-end-column="41" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/it/maior/icaroxt/webservice/ShiftWebService.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+        <state relative-caret-position="442">
+          <caret line="56" selection-start-line="56" selection-end-line="56" />
           <folding>
-            <element signature="e#37#87#0" expanded="true" />
+            <element signature="e#37#99#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/it/maior/icaroxt/model/ShiftIdGenerator.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="10" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
+          <folding>
+            <element signature="e#32#93#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/it/maior/icaroxt/entity/shiftValidations/ShiftValidator.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="634">
+          <caret line="55" selection-start-line="55" selection-end-line="55" />
+          <folding>
+            <element signature="e#50#78#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/it/maior/icaroxt/repository/ShiftRepository.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+          <folding>
+            <element signature="e#37#73#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/it/maior/icaroxt/model/ShiftManager.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
         </state>
       </provider>
     </entry>

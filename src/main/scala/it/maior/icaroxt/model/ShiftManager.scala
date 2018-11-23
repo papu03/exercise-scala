@@ -15,6 +15,15 @@ class ShiftManager(@Autowired val shiftRepository: ShiftRepository) {
     shiftRepository.shifts
   }
 
+  def setShiftList(shifts:ArrayBuffer[Shift])={
+    shiftRepository.shifts=shifts
+  }
+
+  def getShift(id:Int):Shift={
+    shiftRepository.shifts.collectFirst { case shift if shift.shiftId==id => shift }.get
+
+  }
+
   def addShift(shift: Shift) = {
 
     shiftRepository.shifts.append(shift)

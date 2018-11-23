@@ -4,7 +4,7 @@ package it.maior.icaroxt.entity
 //  require(duration>0)
 //
 //}
-case class Shift(crewMember:CrewMember,weekDay: WeekDay, duration:Int) {
+case class Shift( shiftId:Int,crewMember:CrewMember,weekDay: WeekDay, duration:Int) {
   require(duration>0)
 
 }
