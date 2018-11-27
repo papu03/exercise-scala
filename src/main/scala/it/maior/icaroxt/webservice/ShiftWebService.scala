@@ -1,18 +1,17 @@
 package it.maior.icaroxt.webservice
 
 import it.maior.icaroxt.entity.shiftValidations.ShiftValidator
-import it.maior.icaroxt.entity.{CrewMember, Shift}
-import it.maior.icaroxt.repository.{CrewMemberRepository, WeekDayRepository}
-import it.maior.icaroxt.model.{CrewMemberManager, ShiftManager}
+import it.maior.icaroxt.entity.Shift
+import it.maior.icaroxt.model.ShiftManager
 import org.springframework.beans.factory.annotation.Autowired
-import org.springframework.http.{HttpHeaders, HttpStatus, ResponseEntity}
 import org.springframework.web.bind.annotation.{GetMapping, PostMapping, RequestBody, RestController}
 import org.springframework.http.ResponseEntity
-import org.springframework.web.bind.annotation.DeleteMapping
-import org.springframework.web.bind.annotation.PathVariable
 import cats.data.Validated._
 import org.springframework.web.bind.annotation.DeleteMapping
 import org.springframework.web.bind.annotation.PathVariable
+import org.springframework.web.bind.annotation.PathVariable
+import org.springframework.web.bind.annotation.PutMapping
+import org.springframework.web.bind.annotation.RequestBody
 
 @RestController
 class ShiftWebService(@Autowired val shiftManager: ShiftManager,  @Autowired val shiftValidator: ShiftValidator) {
@@ -27,12 +26,15 @@ class ShiftWebService(@Autowired val shiftManager: ShiftManager,  @Autowired val
     shiftManager.getShift(id)
   }
 
+  @GetMapping(path = Array("/crewMemberShifts/{crewMemberId}"))
+  def getShiftsFromCrewMemberId(@PathVariable crewMemberId: Int) = {
+    shiftManager.getShiftsFromCrewMemberId(crewMemberId)
+  }
+
   @PostMapping(path = Array("/shift"))
   def addShift(@RequestBody shift: ShiftDTO):ResponseEntity[List[String]] = {
 
-    val shifts = shiftManager.getShiftList()
-
-    shiftValidator.validateAndMapToShift(shift.crewMemberId,shift.weekDay,shift.duration) match{
+    shiftValidator.validateAndMapToNewShift(shift.crewMemberId,shift.weekDay,shift.duration) match{
 
           case Valid(shift) =>  {
 
@@ -42,18 +44,39 @@ class ShiftWebService(@Autowired val shiftManager: ShiftManager,  @Autowired val
 
           case Invalid(chain) => {
             val errors: List[String] = chain.foldLeft(List[String]())((list,error) => list :+ error.errorMessage)
-
-
             return ResponseEntity.badRequest().body(errors)
           }
     }
   }
 
 
+  @PutMapping(Array("/shift/{shiftToUpdateId}"))
+  def updateShift(@RequestBody newShift: ShiftDTO,@PathVariable shiftToUpdateId: Int):ResponseEntity[List[String]] = {
+
+    shiftValidator.validateAndMapToOldShift(shiftToUpdateId,newShift.crewMemberId,newShift.weekDay,newShift.duration) match{
+
+      case Valid(shift) =>  {
+
+        shiftManager.updateShift(shiftToUpdateId,shift)
+        return ResponseEntity.ok().body(List[String]())
+      }
+
+      case Invalid(chain) => {
+        val errors: List[String] = chain.foldLeft(List[String]())((list,error) => list :+ error.errorMessage)
+        return ResponseEntity.badRequest().body(errors)
+      }
+    }
+
+  }
 
   @DeleteMapping(Array("/shift/{id}"))
-  def deleteStudent(@PathVariable id: Int): Unit = {
+  def deleteShift(@PathVariable id: Int): Unit = {
     shiftManager.setShiftList(shiftManager.getShiftList().filter(s => s.shiftId!=id))
+  }
+
+  @DeleteMapping(Array("/crewMemberShifts/{id}"))
+  def deleteShiftsMember(@PathVariable id: Int): Unit = {
+    shiftManager.setShiftList(shiftManager.getShiftList().filter(s => s.crewMember.id!=id))
   }
 
 

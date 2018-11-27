@@ -11,11 +11,11 @@ import scala.collection.mutable.ArrayBuffer
 class ShiftManager(@Autowired val shiftRepository: ShiftRepository) {
 
 
-  def getShiftList():ArrayBuffer[Shift]={
+  def getShiftList():List[Shift]={
     shiftRepository.shifts
   }
 
-  def setShiftList(shifts:ArrayBuffer[Shift])={
+  def setShiftList(shifts:List[Shift])={
     shiftRepository.shifts=shifts
   }
 
@@ -24,9 +24,21 @@ class ShiftManager(@Autowired val shiftRepository: ShiftRepository) {
 
   }
 
+  def getShiftsFromCrewMemberId(crewMemberId:Int):List[Shift]={
+    val shifts = shiftRepository.shifts
+    shifts.filter(s => s.crewMember.id == crewMemberId)
+  }
+
   def addShift(shift: Shift) = {
 
-    shiftRepository.shifts.append(shift)
+    setShiftList(shift :: shiftRepository.shifts)
+
+  }
+
+  def updateShift(shiftToUpdateId:Int,newShift:Shift) ={
+
+    val shiftUpdated= newShift :: shiftRepository.shifts.filter(s => s.shiftId!=shiftToUpdateId)
+    setShiftList(shiftUpdated)
 
   }
 

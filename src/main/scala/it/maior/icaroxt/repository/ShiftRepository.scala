@@ -10,16 +10,16 @@ import scala.collection.mutable.ArrayBuffer
 @Repository
 class ShiftRepository(@Autowired val crewMemberManager: CrewMemberRepository, @Autowired val weekDayManager: WeekDayRepository, @Autowired val shiftIdGenerator:ShiftIdGenerator) {
 
-  var shifts:ArrayBuffer[Shift] = ArrayBuffer(
-    createShiftFromMemberName("Riccardo","Monday",3),
-    createShiftFromMemberName("Tommaso","Wednesday",1),
-    createShiftFromMemberName("Giuseppe","Monday",4),
-    createShiftFromMemberName("Marco","Saturday",2),
-    createShiftFromMemberName("Marco","Sunday",6)
+  var shifts:List[Shift] = List(
+    createShiftFromInfo("Riccardo","Monday",3),
+    createShiftFromInfo("Tommaso","Wednesday",1),
+    createShiftFromInfo("Giuseppe","Monday",4),
+    createShiftFromInfo("Marco","Saturday",2),
+    createShiftFromInfo("Marco","Sunday",6)
   )
 
 
-  def createShiftFromMemberName(name:String,weekDayName:String,duration:Int)={
+  def createShiftFromInfo(name:String, weekDayName:String, duration:Int)={
 
 
     val weekDay = weekDayManager.week.collectFirst{case weekDay if weekDay.name==weekDayName => weekDay}
