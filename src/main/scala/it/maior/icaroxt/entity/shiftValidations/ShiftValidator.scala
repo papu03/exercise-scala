@@ -47,17 +47,18 @@ class ShiftValidator(@Autowired val crewMemberManager: CrewMemberManager,
 
 
   def validateAndMapToNewShift(crewMemberId: Int, weekdayName: String, duration: Int): ValidationResult[Shift] = {
-    (validateCrewMember(crewMemberId),
-      validateWeekday(weekdayName),
-      validateDuration(duration)
-    ).mapN(Shift(shiftIdGenerator.generateIds(), _, _, _))
+    validateAndMapToShift(shiftIdGenerator.generateIds(), crewMemberId, weekdayName, duration)
   }
 
-  def validateAndMapToOldShift(shiftToUpdateId:Int,crewMemberId: Int, weekdayName: String, duration: Int): ValidationResult[Shift] = {
+  def validateAndMapToExistingShift(shiftToUpdateId:Int, crewMemberId: Int, weekdayName: String, duration: Int): ValidationResult[Shift] = {
+    validateAndMapToShift(shiftToUpdateId, crewMemberId, weekdayName, duration)
+  }
+
+  private def validateAndMapToShift(shiftId: Int, crewMemberId: Int, weekdayName: String, duration: Int) = {
     (validateCrewMember(crewMemberId),
       validateWeekday(weekdayName),
       validateDuration(duration)
-    ).mapN(Shift(shiftToUpdateId, _, _, _))
+    ).mapN(Shift(shiftId, _, _, _))
   }
 
 

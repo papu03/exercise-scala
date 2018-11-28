@@ -17,13 +17,24 @@ import org.springframework.web.bind.annotation.RequestBody
 class ShiftWebService(@Autowired val shiftManager: ShiftManager,  @Autowired val shiftValidator: ShiftValidator) {
 
   @GetMapping(path = Array("/shifts"))
-  def getShiftList() = {
-    shiftManager.getShiftList()
+  def getShifts() = {
+    shiftManager.getShifts()
+  }
+
+  @GetMapping(path = Array("/shiftsDTO"))
+  def getShiftsDTO() = {
+    shiftManager.getShiftsDTO()
   }
 
   @GetMapping(path = Array("/shifts/{id}"))
   def getShift(@PathVariable id: Int): Shift = {
     shiftManager.getShift(id)
+  }
+
+
+  @GetMapping(path = Array("/shiftsDTO/{id}"))
+  def getShiftDTO(@PathVariable id: Int): ShiftDTO = {
+    shiftManager.getShiftDTO(id)
   }
 
   @GetMapping(path = Array("/crewMemberShifts/{crewMemberId}"))
@@ -53,7 +64,7 @@ class ShiftWebService(@Autowired val shiftManager: ShiftManager,  @Autowired val
   @PutMapping(Array("/shift/{shiftToUpdateId}"))
   def updateShift(@RequestBody newShift: ShiftDTO,@PathVariable shiftToUpdateId: Int):ResponseEntity[List[String]] = {
 
-    shiftValidator.validateAndMapToOldShift(shiftToUpdateId,newShift.crewMemberId,newShift.weekDay,newShift.duration) match{
+    shiftValidator.validateAndMapToExistingShift(shiftToUpdateId,newShift.crewMemberId,newShift.weekDay,newShift.duration) match{
 
       case Valid(shift) =>  {
 
@@ -71,12 +82,12 @@ class ShiftWebService(@Autowired val shiftManager: ShiftManager,  @Autowired val
 
   @DeleteMapping(Array("/shift/{id}"))
   def deleteShift(@PathVariable id: Int): Unit = {
-    shiftManager.setShiftList(shiftManager.getShiftList().filter(s => s.shiftId!=id))
+    shiftManager.setShifts(shiftManager.getShifts().filter(s => s.shiftId!=id))
   }
 
   @DeleteMapping(Array("/crewMemberShifts/{id}"))
   def deleteShiftsMember(@PathVariable id: Int): Unit = {
-    shiftManager.setShiftList(shiftManager.getShiftList().filter(s => s.crewMember.id!=id))
+    shiftManager.setShifts(shiftManager.getShifts().filter(s => s.crewMember.id!=id))
   }
 
 

@@ -3,6 +3,7 @@ package it.maior.icaroxt.model
 import org.springframework.stereotype.Service
 import it.maior.icaroxt.entity._
 import it.maior.icaroxt.repository.{CrewMemberRepository, ShiftRepository}
+import it.maior.icaroxt.webservice.ShiftDTO
 import org.springframework.beans.factory.annotation.Autowired
 
 import scala.collection.mutable.ArrayBuffer
@@ -11,16 +12,26 @@ import scala.collection.mutable.ArrayBuffer
 class ShiftManager(@Autowired val shiftRepository: ShiftRepository) {
 
 
-  def getShiftList():List[Shift]={
+  def getShifts():List[Shift]={
     shiftRepository.shifts
   }
 
-  def setShiftList(shifts:List[Shift])={
+  def getShiftsDTO():List[ShiftDTO]={
+
+    shiftRepository.shifts.map(shift => new ShiftDTO(shift.crewMember.id,shift.weekDay.name,shift.duration,shift.shiftId))
+  }
+
+  def setShifts(shifts:List[Shift])={
     shiftRepository.shifts=shifts
   }
 
   def getShift(id:Int):Shift={
     shiftRepository.shifts.collectFirst { case shift if shift.shiftId==id => shift }.get
+  }
+
+  def getShiftDTO(id:Int):ShiftDTO={
+
+    getShiftsDTO().collectFirst { case shift if shift.shiftId==id => shift }.get
 
   }
 
@@ -31,14 +42,14 @@ class ShiftManager(@Autowired val shiftRepository: ShiftRepository) {
 
   def addShift(shift: Shift) = {
 
-    setShiftList(shift :: shiftRepository.shifts)
+    setShifts(shift :: shiftRepository.shifts)
 
   }
 
   def updateShift(shiftToUpdateId:Int,newShift:Shift) ={
 
     val shiftUpdated= newShift :: shiftRepository.shifts.filter(s => s.shiftId!=shiftToUpdateId)
-    setShiftList(shiftUpdated)
+    setShifts(shiftUpdated)
 
   }
 
