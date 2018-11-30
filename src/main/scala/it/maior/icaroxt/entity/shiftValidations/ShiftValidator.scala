@@ -4,7 +4,7 @@ import cats.data.Validated._
 import cats.data.ValidatedNec
 import cats.implicits._
 import it.maior.icaroxt.entity.{CrewMember, Shift, WeekDay}
-import it.maior.icaroxt.entity.shiftValidations.errors.{CrewMemberDoesNotExistError, DurationLessThenOneDayError, ValidationError, WeekdayDoesNotExistError}
+import it.maior.icaroxt.entity.shiftValidations.errors.{CrewMemberDoesNotExistError, DurationLessThanOneDayError, ValidationError, WeekdayDoesNotExistError}
 import it.maior.icaroxt.model.{CrewMemberManager, ShiftIdGenerator}
 import it.maior.icaroxt.repository.WeekDayRepository
 import org.springframework.beans.factory.annotation.Autowired
@@ -41,7 +41,7 @@ class ShiftValidator(@Autowired val crewMemberManager: CrewMemberManager,
 
   private def validateDuration(duration: Int): ValidationResult[Int] = {
 
-    if(duration>0) duration.validNec else DurationLessThenOneDayError.invalidNec
+    if(duration>0) duration.validNec else DurationLessThanOneDayError.invalidNec
   }
 
 
@@ -60,6 +60,7 @@ class ShiftValidator(@Autowired val crewMemberManager: CrewMemberManager,
       validateDuration(duration)
     ).mapN(Shift(shiftId, _, _, _))
   }
+
 
 
 

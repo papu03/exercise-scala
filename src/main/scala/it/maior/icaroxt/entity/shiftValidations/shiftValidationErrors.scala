@@ -14,8 +14,16 @@ package object errors {
     def errorMessage: String = "Weekday Does Not Exist."
   }
 
-  case object DurationLessThenOneDayError extends ValidationError {
+  case object DurationLessThanOneDayError extends ValidationError {
     def errorMessage: String = "Duration Less Then One Day"
+  }
+
+  case object DurationGreaterThan3 extends ValidationError {
+    def errorMessage: String = "Shift duration must be <= 3 days"
+  }
+
+  case object MultipleWeekShift extends ValidationError {
+    def errorMessage: String = "Shift must start and terminate in the same week"
   }
 
 

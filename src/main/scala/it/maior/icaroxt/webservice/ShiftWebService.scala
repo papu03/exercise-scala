@@ -42,6 +42,11 @@ class ShiftWebService(@Autowired val shiftManager: ShiftManager,  @Autowired val
     shiftManager.getShiftsFromCrewMemberId(crewMemberId)
   }
 
+  @GetMapping(path = Array("/invalidShifts"))
+  def getValidShifts()= {
+    shiftManager.getInvalidShifts()
+  }
+
   @PostMapping(path = Array("/shift"))
   def addShift(@RequestBody shift: ShiftDTO):ResponseEntity[List[String]] = {
 
