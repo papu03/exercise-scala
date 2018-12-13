@@ -15,7 +15,8 @@ class ShiftRepository(@Autowired val crewMemberManager: CrewMemberRepository, @A
     createShiftFromInfo("Tommaso","Wednesday",1),
     createShiftFromInfo("Giuseppe","Monday",4),
     createShiftFromInfo("Marco","Saturday",2),
-    createShiftFromInfo("Marco","Sunday",6)
+    createShiftFromInfo("Marco","Sunday",6),
+    createShiftFromInfo("Vittorio","Wednesday",1)
   )
 
 

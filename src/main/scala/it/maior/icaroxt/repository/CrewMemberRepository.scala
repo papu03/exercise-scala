@@ -6,7 +6,7 @@ import org.springframework.stereotype.Repository
 @Repository
 class CrewMemberRepository {
 
-  val crewMembers:List[CrewMember] = createMemberFromNames(List("Riccardo","Marco","Giuseppe","Tommaso"))
+  val crewMembers:List[CrewMember] = createMemberFromNames(List("Riccardo","Marco","Giuseppe","Tommaso","Vittorio","Vishal"))
 
   private def createMemberFromNames(membersName:List[String])={
     var id_count=1
