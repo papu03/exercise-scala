@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Deploy') {
       steps {
-        echo 'Hello IcaroXT2'
+        echo 'Hello IcaroXT3'
       }
     }
   }
